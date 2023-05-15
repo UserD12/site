@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Login page{% endblock %}
+
+{% block body %}
+    <h1>Posts</h1>
+    {% for post in posts %}
+        <a href="{{ url_for('showPost', post_id=post[0]) }}" class="post">
+            <div class="post_title">{{ post[2] }}</div>
+            <div class="post_descr">{{ post[3] }}</div>
+            <div class="post_date">{{ post[4] }}</div>
+        </a>
+    {% endfor %}
+{% endblock %}

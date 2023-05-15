@@ -1,0 +1,18 @@
+{% extends 'baselg.html' %}
+
+{% block title %}Login page{% endblock %}
+
+{% block body %}
+    <h1>Мой первый проект</h1>
+    <form action="/login" class="login_form" method="post">
+        {% for msg in get_flashed_messages() %}
+            <h2 class="attention">
+                {{ msg }}
+            </h2>
+        {% endfor %}
+        <input type="text" name="login" placeholder="Введите свой логин" required>
+        <input type="password" name="password" placeholder="Введите свой пароль" required>
+        <button type="submit">Войти</button>
+        <a href="{{ url_for('register')}}" class="zareg">Зарегистрироваться</a>
+    </form>
+{% endblock %}

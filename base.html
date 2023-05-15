@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel ="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="nav">
+        <a href="{{ url_for('home') }}" class="homik">Home</a>
+        <a href="{{ url_for('cabinet') }}" class="cabin">Cabinet</a>
+        <a href="{{ url_for('about_us') }}" class="about">About us</a>
+        <form action="{{ url_for('logout') }}" target="_parent" class="post_ending">
+            <button class="btn_ending">Logout</button>
+        </form>
+    </nav>
+    <main>
+        {% block body %}{% endblock %}
+    </main>
+</body>
+</html>

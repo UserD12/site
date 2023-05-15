@@ -1,0 +1,20 @@
+{% extends 'baselg.html' %}
+
+{% block title %}Login page{% endblock %}
+
+{% block body %}
+    <h1>Мой первый проект</h1>
+    <form action="/confirmemail" class="login_form" method="post">
+        {% for msg in get_flashed_messages() %}
+            <h2 class="attention">
+                {{ msg }}
+        <!--    </h2>-->
+        <!--{% endfor %}-->
+        <!-- <h2>Письмо отправлено на почту:</h2>-->
+        <!-- {% for emailpol in emailpols %}-->
+        <!--     emailpol-->
+        <!-- {% endfor %}-->
+        <input type="password" name="confirm_code" placeholder="Введите пароль, полученный на e-mail" required>
+        <button type="submit">Подтвердить</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Flask project</title>
+    <link rel ="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main>
+        <h1 style = >Мой первый проект</h1>
+        {% for post in result%}
+            <div class="inf">
+                <div class="post_title">{{ post[1] }}</div>
+                <div class="post_descr">{{ post[2] }}</div>
+                <div class="post_date">{{ post[3] }}</div>
+            </div>
+        {% endfor %}
+    </main>
+</body>
+</html>

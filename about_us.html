@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Cabinet{% endblock %}
+
+{% block body %}
+    <h1>Мой первый проект на Flask</h1>
+    <h2>Сайт создан на фреймворке Flask.</h2>
+    <h2>Фреймворк — программная платформа, определяющая структуру программной системы; программное обеспечение, облегчающее разработку и объединение разных компонентов большого программного проекта.</h2>
+    <div class="programmer_img">
+        <img src="{{ url_for('static', filename ='img/programmist.png')}}" alt="programmist">
+    </div>
+    {% endblock %}

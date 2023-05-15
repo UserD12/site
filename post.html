@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Cabinet{% endblock %}
+
+{% block body %}
+    <section class="cabinet">
+        <div class="post">
+            <div class="post_title">{{ post[2] }}</div>
+            <div class="post_descr">{{ post[3] }}</div>
+            <div class="post_date">{{ post[4] }}</div>
+            {% if post[1] == user_id %}
+                <a href="{{ url_for('deletePost', post_id=post[0])}}">Удалить</a>
+            {% endif %}
+        </div>
+    </section>
+{% endblock %}

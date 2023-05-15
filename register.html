@@ -1,0 +1,29 @@
+{% extends 'baselg.html' %}
+
+{% block title %}Login page{% endblock %}
+
+{% block body %}
+    <a href="{{ url_for('login')}}" class="returnlog">Назад</a>
+    <h1>Зарегистрируйся на сайте</h1>
+    <form action="" class="login_form" method="post">
+        {% for msg in get_flashed_messages() %}
+            <h2 class="attention">
+                {{ msg }}
+            </h2>
+        {% endfor %}
+        <input type="text" name="user_login" placeholder="Введите свой логин:" required>
+        <input type="password" name="user_password" placeholder="Введите свой пароль:" required>
+        <input type="password" name="confirm_password" placeholder="Подтвердите свой пароль:" required>
+        <input type="text" name="email" placeholder="Введите свой email:" required>
+        <input type="text" name="user_firstname" placeholder="Введите своё имя:" required>
+        <input type="text" name="user_lastname" placeholder="Введите свою фамилию:" required>
+        <input type="text" name="user_major" placeholder="Введите свою специальность:" required>
+        <input type="number" name="user_age" placeholder="Введите свой возраст:" required>
+        <input type="date" name="user_bdate" placeholder="Введите свой день рождения:" required>
+        <select name="user_sex">
+            <option value="male" selected>Мужской</option>
+            <option value="female">Женский</option>
+        </select>
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+{% endblock %}

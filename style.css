@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: #0000005f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a {
+    text-decoration: none;
+    margin: 0 20px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.btn_ending {
+    width: 100px;
+    height: 50px;
+    border: 6px solid #000000;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    font-size: 20px;
+
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #ff0000, #0051ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 40px;
+}
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+}
+h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+}
+.login_form {
+    width: 400px;
+    min-height: 300px;
+    background-color: rgba(0, 0, 0, 0.247);
+    border: 2px solid #000000;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.login_form input {
+    width: 300px;
+    height: 60px;
+    border: 2px solid #000000;
+    border-radius: 25px;
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+.login_form select {
+    width: 300px;
+    height: 60px;
+    border: 2px solid #000000;
+    border-radius: 25px;
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+.login_form button {
+    min-width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    font-size: 20px;
+}
+
+.post {
+    width: 90%;
+    height: 150px;
+    background-color: #fff;
+    padding: 40px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+.post_title {
+    font-size: 20pt;
+    font-weight: 900;
+}
+.post_descr {
+    font-size: 20px;
+}
+.post_date {
+}
+
+.inf {
+    width: 90%;
+    height: 300px;
+    background-color: #fff;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+}
+.inf_title {
+    font-size: 20pt;
+    font-weight: 900;
+}
+.inf_descr {
+    font-size: 20px;
+}
+.inf_date {
+}
+.cabinet {
+    width: 90%;
+    min-height: 100vh;
+    background-color: #00000000;
+    padding-top: 40px;
+}
+.cabinet_wrapper {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.user_img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.user_img img {
+    width: 100%;
+}
+.user_name {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.user_lastname {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.post_form {
+    width: 80%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.post_form input {
+    width: 100%;
+    height: 60px;
+    border: none;
+    margin-bottom: 25px;
+    border-radius: 25px;
+    padding-left: 25px;
+}
+
+.post_form textarea{
+    width: 100%;
+    height: 100px;
+    border: none;
+    margin-bottom: 25px;
+    border-radius: 25px;
+    padding-left: 25px;
+    padding-top: 15px;
+    resize: vertical;
+}
+
+.post_form button {
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(0, 166, 255);
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+ 
+.programmer_img {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.programmer_img img {
+    width: 100%;
+}
+
+.zareg {
+    color: #fff;
+}
+
+.attention {
+    margin-bottom: 20px; 
+    text-align: center;
+    color: #ff0000;
+}
+
+.returnlog {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    flex-direction: row;
+    margin-top: 0px;
+    margin-left: 0px;
+}
